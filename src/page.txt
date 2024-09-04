@@ -1,0 +1,402 @@
+
+
+// import React from "react";
+
+// import "./style.css";
+// import "./grid.css";
+// import iphone from "../images/iphone-screen-with-shadow.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLifeRing } from "@fortawesome/free-solid-svg-icons";
+// import { faMobile } from "@fortawesome/free-solid-svg-icons";
+// import { faBolt } from "@fortawesome/free-solid-svg-icons";
+
+// const AboutComponent = ({ id }) => {
+//   return (
+//     <>
+//        <section id={id}>
+//        <div className="about-component min-width-mb ">
+//         <div className="margin-container-about">
+//           <div className="container">
+//             <div className="col-lg-12 col-12">
+//               <div className="row-title row-margin">
+//                 <h1 className="main-title">ABOUT</h1>
+//                 <p className="main-content">
+//                   Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+//                   viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+//                   pharetra ante.
+//                 </p>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div className="container about-icons-lg-m">
+//             <div className=" box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//               <FontAwesomeIcon icon={faLifeRing} className="about-icon" />
+//               <div>
+//                 <h4 className="main-sub-title">Support</h4>
+//                 <p className="main-sub-content">
+//                   Phasellus lobortis justo a magna facilisis, in commodo tellus
+//                   rutrum. Sed vitae condimentum nulla.
+//                 </p>
+//               </div>
+//             </div>
+//             <div className="box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//               <FontAwesomeIcon icon={faMobile} className="about-icon" />
+//               <div>
+//                 <h4 className="main-sub-title">Cross Platform</h4>
+//                 <p className="main-sub-content">
+//                   Phasellus lobortis justo a magna facilisis, in commodo tellus
+//                   rutrum. Sed vitae condimentum nulla.
+//                 </p>
+//               </div>
+//             </div>
+//             <div className="box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//               <FontAwesomeIcon icon={faBolt} className="about-icon" />
+//               <div>
+//                 <h4 className="main-sub-title">Fast</h4>
+//                 <p className="main-sub-content">
+//                   Phasellus lobortis justo a magna facilisis, in commodo tellus
+//                   rutrum. Sed vitae condimentum nulla.
+//                 </p>
+//               </div>
+//             </div>
+
+//             <div className="box  col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+//               <button className="box-button">Learn More</button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className="d-lg-md-none">
+
+//       </div>
+//        </section>
+//     </>
+//   );
+// };
+// export default AboutComponent;
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect } from "react";
+// import "./style.css";
+// import "./grid.css";
+// import iphone from "../images/iphone-screen.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faBolt,
+//   faBatteryFull,
+//   faWifi,
+//   faDollarSign,
+//   faCheckDouble,
+//   faHdd,
+// } from "@fortawesome/free-solid-svg-icons";
+
+// const FeaturesComponent = ({id}) => {
+//   return (
+//     <>
+//       <section id={id}>
+//       <div className="features-component margin-features-lg-md margin-features-sm">
+//         <div className="align-items-center container">
+//           <div className="col-lg-12 col-12">
+//             <div className="row-title row-margin">
+//               <h1 className="main-title">Features</h1>
+//               <p className="main-content">
+//                 Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+//                 viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+//                 pharetra ante.
+//               </p>
+//             </div>
+//           </div>
+//           <div className="col-lg-4 col-md-4  col-sm-12 col-12">
+//             <div className="d-flex flex-1">
+//               <div className="box  ">
+//                 <FontAwesomeIcon icon={faBolt} className=" feature-icon" />
+//                 <div className="">
+//                   <h4 className="name-font">Fast Processing</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="box  flex-1">
+//                 {" "}
+//                 <FontAwesomeIcon
+//                   icon={faBatteryFull}
+//                   className=" feature-icon"
+//                 />
+//                 <div>
+//                   <h4 className="name-font">Low Power Consuming</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+//               <div className="box">
+//                 {" "}
+//                 <FontAwesomeIcon icon={faWifi} className=" feature-icon" />
+//                 <div>
+//                   <h4 className="name-font">Wifi Compatibility</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+//             <div className="box feature-image">
+//               <img src={iphone}></img>
+//             </div>
+//           </div>
+
+//           <div className="col-lg-4 col-md-4  col-sm-12 col-12">
+//             <div className="d-flex flex-2">
+//               <div className="box">
+//                 {" "}
+//                 <FontAwesomeIcon
+//                   icon={faDollarSign}
+//                   className=" feature-icon"
+//                 />
+//                 <div>
+//                   <h4 className="name-font">Regular Updates</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+
+//               <div className="box">
+//                 <FontAwesomeIcon
+//                   icon={faCheckDouble}
+//                   className=" feature-icon"
+//                 />
+//                 <div>
+//                   <h4 className="name-font">Save Money</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+
+//               <div className="box">
+//                 <FontAwesomeIcon icon={faHdd} className=" feature-icon" />
+//                 <div>
+//                   <h4 className="name-font">Unlimited Storage</h4>
+//                   <p className="info">
+//                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//                     sed do eiusmod tempor incididugnt ut labore
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+
+//           <div style={{ marginBottom: "130px" }}></div>
+//         </div>
+//       </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default FeaturesComponent;
+
+
+
+
+
+
+// import React from "react";
+
+// import "./style.css";
+// import "./grid.css";
+
+// import user1 from "../images/user1.jpg";
+// import user2 from "../images/user2.jpg";
+// import user3 from "../images/user3.jpg";
+
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLifeRing } from "@fortawesome/free-solid-svg-icons";
+
+
+// const StaffComponent = () => {
+//   return (
+//     <>
+//       <div className="margin-user-lg-md ">
+//         <div>
+//         <div className="container">
+//           <div className="col-lg-12 col-12">
+//             <div className="row-title ">
+//               <h1 className="main-title">Our Team</h1>
+//               <p className="main-content">
+//                 Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+//                 viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+//                 pharetra ante.
+//               </p>
+//             </div>
+//           </div>
+
+//         </div>
+
+//         <div className="container">
+//         <div className=" box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//             <img src={user1} className="user-img" />
+//             <div>
+//               <h4 className="main-sub-title line-height">Nitu Singh</h4>
+//               <p className="main-sub-content">Marketing Specialist</p>
+//             </div>
+//           </div>
+//           <div className="box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//           <img src={user2} className=" user-img" />
+//             <div>
+//               <h4 className="main-sub-title line-height">Yogesh Singh</h4>
+//               <p className="main-sub-content">CEO & Founder</p>            </div>
+//           </div>
+//           <div className="box col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
+//           <img src={user3} className=" user-img" />
+//             <div>
+//               <h4 className="main-sub-title line-height">Nisha Sharma</h4>
+//               <p className="main-sub-content"> Web Developer</p>            </div>
+//           </div>
+
+//           <div className="box  col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+//             <button className="box-button">Learn More</button>
+//           </div>
+//         </div>
+//       </div>
+
+//         </div>
+        
+          
+
+         
+
+      
+//     </>
+//   );
+// };
+// export default StaffComponent;
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import logo_black from "../images/logo-black.png";
+// import "./style.css";
+// import "./grid.css";
+// import user1 from "../images/user1.jpg";
+// import user2 from "../images/user2.jpg";
+// import user3 from "../images/user3.jpg";
+// import left from "../images/arrow-left.png";
+// import right from "../images/arrow-right.png";
+
+// const TestimonalsComponent = () => {
+//   const datas = [
+//     {
+//       img: user1,
+//       name: "Arun",
+//       work: "Designer",
+//       paragraph:
+//         "Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra.",
+//     },
+//     {
+//       img: user2,
+//       name: "Joe",
+//       work: "Developer",
+//       paragraph:
+//         "Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.",
+//     },
+//     {
+//       img: user3,
+//       name: "Hendry",
+//       work: "Blogger",
+//       paragraph:
+//         "Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum.",
+//     },
+//   ];
+
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const user = datas[currentIndex];
+
+//   const handlePrev = () => {
+//     setCurrentIndex(
+//       (prevIndex) => (prevIndex - 1 + datas.length) % datas.length
+//     );
+//   };
+
+//   const handleNext = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex + 1) % datas.length);
+//   };
+
+//   return (
+//     <>
+//       <div className="">
+//         <div className="entire-bg">
+
+//           <div className="title-testimonal">
+//             <div className="testimonal-detail">
+//               <h3 className="main-title-white">Testimonals</h3>
+//               <p className="main-content-white">
+//                 Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+//                 viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+//                 pharetra ante.
+//               </p>
+//             </div>
+//           </div>
+
+//           <div className="all-user">
+//             <img src={left} onClick={handlePrev} className="btn-margin"></img>
+//             <div className="user-detail">
+//               <div className="data">
+//                 <img
+//                   src={user.img}
+//                   alt={user.name}
+//                   className="testimonal-img"
+//                 />
+//                 <div className="">
+//                   <h4 className="name-font-testimonal line-height-name ">{user.name}</h4>
+//                   <h6 className="name-font line-height-testimonal">{user.work}</h6>
+//                   <p className="para-margin">{user.paragraph}</p>
+//                 </div>
+//               </div>
+//             </div>
+//             <img src={right} onClick={handleNext} className="btn-margin"></img>
+//           </div>
+
+//           <div className="btn-flex">
+//           <img src={left} onClick={handlePrev} className="btn-margin  btn-show"></img> <img src={right} onClick={handleNext} className="btn-margin btn-show"></img>
+
+//           </div>
+          
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default TestimonalsComponent;
+
+
